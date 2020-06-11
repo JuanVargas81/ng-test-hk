@@ -1,10 +1,20 @@
 import { Component } from '@angular/core';
+import { ReservasService } from './services/reservas.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  providers: [ReservasService],
 })
 export class AppComponent {
-  title = 'ng-hdg-heroku';
+  title = 'ng-heroku-hdg-client';
+  data = '';
+  constructor(private reservasSvc: ReservasService){}
+  ngOnInit() {
+    this.reservasSvc.getAll().subscribe((res) => {
+      console.log('Respuesta', res);
+      this.data = JSON.stringify(res);
+    });
+  }
 }
