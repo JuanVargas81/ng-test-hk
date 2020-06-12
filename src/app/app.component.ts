@@ -8,13 +8,16 @@ import { ReservasService } from './services/reservas.service';
   providers: [ReservasService],
 })
 export class AppComponent {
-  title = 'ng-heroku-hdg-client';
+  title = 'HDG WebApp';
   data = '';
-  constructor(private reservasSvc: ReservasService){}
+  constructor(private reservasSvc: ReservasService)
+  {}
+  
   ngOnInit() {
     this.reservasSvc.getAll().subscribe((res) => {
       console.log('Respuesta', res);
       this.data = JSON.stringify(res);
     });
+    
   }
 }

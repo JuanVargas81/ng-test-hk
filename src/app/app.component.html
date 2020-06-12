@@ -32,7 +32,7 @@
           <img src="../assets/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Admin</a>
+          <a href="" class="d-block">Admin</a>
         </div>
       </div>
 
@@ -44,7 +44,7 @@
           <li class="nav-item has-treeview menu-open">
             
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="" class="nav-link">
               <i class="nav-icon fas fa-chart-line"></i>
               <p>
                 Inicio
@@ -53,7 +53,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a class="nav-link" routerLink="/reservas" routerLinkActive="active">
               <i class="nav-icon fas fa-concierge-bell"></i>
               <p>
                 Reservas
@@ -62,7 +62,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a class="nav-link" routerLink="/reportes" routerLinkActive="active">
               <i class="nav-icon fas fa-file-download"></i>
               <p>
                 Reportes
@@ -71,7 +71,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a class="nav-link" routerLink="/clientes" routerLinkActive="active">
               <i class="nav-icon fas fa-business-time"></i>
               <p>
                 Clientes
@@ -80,7 +80,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a class="nav-link" routerLink="/tarifas" routerLinkActive="active">
               <i class="nav-icon fas fa-money-bill"></i>
               <p>
                 Tarifas
@@ -89,7 +89,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a class="nav-link" routerLink="/usuarios" routerLinkActive="active">
               <i class="nav-icon fas fa-users"></i>
               <p>
                 Usuarios
@@ -111,7 +111,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Inicio</h1>
+            
 
 
           </div><!-- /.col -->
@@ -124,38 +124,9 @@
     <!-- Main content -->
     <div class="content">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-6">
-           
-            <div class="card">
-  <div class="card-header">
-    <h3 class="card-title">Peticion REST API</h3>
-    <div class="card-tools">
-      <!-- Buttons, labels, and many other things can be placed here! -->
-      <!-- Here is a label for example -->
-      
-    </div>
-    <!-- /.card-tools -->
-  </div>
-  <!-- /.card-header -->
-  <div class="card-body">
-    Respuesta :
-    <code>{{ data }}</code>
-  </div>
-  <!-- /.card-body -->
-  <div class="card-footer">
-    Peticiones a http://localhost/api/Reservas
-  </div>
-  <!-- /.card-footer -->
-</div>
-<!-- /.card -->
-
-          </div>
+        
+        <router-outlet></router-outlet>
           
-          
-          <!-- /.col-md-6 -->
-        </div>
-        <!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content -->
@@ -191,5 +162,4 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
 
