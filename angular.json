@@ -134,6 +134,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ng-hdg-heroku"
+    }
+  },
+  "defaultProject": "ng-hdg-heroku",
+  "cli": {
+    "analytics": false
+  }
 }
